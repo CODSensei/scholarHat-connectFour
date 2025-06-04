@@ -11,9 +11,9 @@ const Cell: React.FC<CellProps> = ({ value, onClick }) => {
     >
       <div
         className={`w-12 h-12 rounded-full ${
-          value === "R"
+          value === "P1"
             ? "bg-red-500"
-            : value === "Y"
+            : value === "P2"
             ? "bg-yellow-500"
             : "bg-gray-200"
         }`}
