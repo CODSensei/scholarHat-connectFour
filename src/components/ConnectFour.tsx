@@ -64,7 +64,7 @@ const ConnectFour: React.FC = () => {
     }
 
     //   //Negative Slope (diagonal)
-    for (let r = 0; r < ROWS; r++) {
+    for (let r = 3; r < ROWS; r++) {
       for (let c = 0; c < COLS - 3; c++) {
         if (
           board[r][c] &&
@@ -114,6 +114,12 @@ const ConnectFour: React.FC = () => {
 
   const handleDrop = (col: number) => {
     if (winner || !gameStarted) return; // No moves if game over or not started
+    
+    // Check if column is full
+  if (board[0][col] !== null) {
+    alert('This column is full! Please choose another column.');
+    return;
+  }
 
     const newBoard = board.map((row) => [...row]);
     for (let r = ROWS - 1; r >= 0; r--) {
