@@ -17,8 +17,8 @@ const Cell: React.FC<CellProps> = ({ value, onClick, isDarkTheme }) => {
             : value === "P2"
             ? "bg-pink-500 shadow-[0_0_12px_rgba(236,72,153,0.8)]"
             : isDarkTheme
-            ? "bg-gray-800 shadow-[0_0_8px_rgba(34,211,238,0.4)]"
-            : "bg-gray-300 shadow-[0_0_8px_rgba(59,130,246,0.3)]"
+            ? "bg-gray-800 shadow-[0_0_12px_rgba(34,211,238,0.4)]"
+            : "bg-gray-300 shadow-[0_0_12px_rgba(59,130,246,0.3)]"
         }`}
       ></div>
     </div>

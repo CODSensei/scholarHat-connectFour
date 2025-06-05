@@ -12,8 +12,8 @@ const Board: React.FC<BoardProps> = ({ board, onDrop, isDarkTheme }) => {
     <div
       className={`p-4 rounded-lg shadow-lg ${
         isDarkTheme
-          ? "bg-gray-900 shadow-[0_0_20px_rgba(34,211,238,0.6)]"
-          : "bg-blue-200 shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+          ? "bg-gray-900 border-cyan-500 shadow-[0_0_20px_rgba(34,211,238,0.6)]"
+          : "bg-blue-200 border-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.4)]"
       }`}
     >
       {board.map((row, rowIdx) => (
