@@ -29,6 +29,7 @@ The project is structured with the following key React components and features:
 1. App
 
 Purpose: The root component that renders the entire game.
+
 Features: Serves as the entry point, wrapping and displaying the ConnectFour component.
 
 2. ConnectFour
@@ -100,16 +101,21 @@ Usage
 Start the Game:
 
 Enter names for Player 1 and Player 2.
+
 Click "Start Game" to begin.
 
 Gameplay:
 
 Players take turns clicking a column to drop a disc (cyan for P1, pink for P2).
+
 Discs fall to the lowest empty slot in the column.
+
 A sound plays on each drop; the game checks for a win (four in a row) or draw.
+
 A modal displays the result: "Winner: [Player Name]!" or "It's a Draw!".
 
 Features:
 
 Toggle between dark and light themes with a button.
+
 Reset the game via "Reset Game" or "Play Again" buttons.
